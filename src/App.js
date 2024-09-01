@@ -9,8 +9,6 @@ const decrement = { type : "DECREMENT" }; // [pseudo code]
 
 //Reducers
 
-
-
 function App() {
   return (
     <div>
