@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Counter from "./component/Counter";
+
+// Store : made of multiple of slices
+
+// Actions : what it should do to the state
+const increment = { type : "INCREMENT" }; // [pseudo code]
+// const incrementByAmount = { type : "INCREMENT", payload : 10 };
+const decrement = { type : "DECREMENT" }; // [pseudo code]
+
+//Reducers
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Redux Counter Tutorial</h1>
+      <Counter />
     </div>
   );
 }
